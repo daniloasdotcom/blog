@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+</head>
+<body>
+    <header>
+        <h1>{{ site.title }}</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <!-- Adicione outros links de navegação, se necessário -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>{{ page.title }}</h2>
+            <p class="post-date">{{ page.date | date: "%B %d, %Y" }}</p>
+            <p class="post-category">Categoria: {{ page.category }}</p>
+            <div class="post-content">
+                {{ content }}
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; {{ site.author }} {{ site.year | date: "%Y" }}</p>
+    </footer>
+</body>
+</html>
