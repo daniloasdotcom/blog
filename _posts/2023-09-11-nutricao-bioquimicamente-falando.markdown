@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Nutrição - Bioquimicamente Falando"
-date:   2023-09-08 16:05:09 -0300
-categories: bioquimica
+title: "A nutrição é essencial"
+date: 2023-09-11
+author: Seu Nome
 ---
 
 A nutrição é essencial tanto para os seres humanos quanto para as plantas, mas você já parou para pensar nas semelhanças intrigantes entre esses dois mundos aparentemente distintos? Neste artigo, vamos explorar a relação entre a nutrição humana e a nutrição de plantas, traçando paralelos surpreendentes entre a rizosfera e o trato intestinal humano. Além disso, mergulharemos no universo dos macro e micronutrientes, analisando sua importância tanto para nós quanto para as plantas. Prepare-se para desvendar os segredos nutricionais que conectam esses dois reinos.

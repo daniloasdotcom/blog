@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Blog</title>
+    <style>
+        /* Reset CSS para zerar margens e preenchimento padrão */
+        body, h1, ul, li, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilos do corpo */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        /* Estilos do cabeçalho */
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        header h1 {
+            font-size: 2rem;
+        }
+
+        /* Estilos da navegação */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        /* Estilos do conteúdo principal */
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        main ul {
+            list-style-type: none;
+        }
+
+        main li {
+            margin-bottom: 20px;
+        }
+
+        main h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        main p {
+            font-size: 1rem;
+            color: #333;
+        }
+
+        /* Estilos do rodapé */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Início</a></li>
+                <!-- Adicione mais links de navegação aqui, se necessário -->
+            </ul>
+        </nav>
+        <h1>Meu Blog</h1>
+    </header>
+
+    <main>
+        <ul>
+            {% for post in site.posts %}
+            <li>
+                <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                <p>{{ post.date | date: "%Y-%m-%d" }}</p>
+                <p>{{ post.excerpt }}</p>
+            </li>
+            {% endfor %}
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; {{ site.time | date: "%Y" }} Meu Blog</p>
+    </footer>
+</body>
+</html>
+
+
